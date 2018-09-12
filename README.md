@@ -4,7 +4,7 @@ By **Tyler Biggs**
 
 ---
 
-## Getting Started
+## Getting Started with 3.7
 
 1. Install [Anaconda](https://anaconda.org/).
 
@@ -36,9 +36,9 @@ python -m ipykernel install --user --name py37 --display-name "Python 3.7"
 
 __Launching a server:__
 
-    ```bash
-    jupyter lab
-    ```
+```bash
+jupyter lab
+```
 
 ### General Python
 
