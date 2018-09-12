@@ -17,6 +17,8 @@ By **Tyler Biggs**
 
     Read more about [creating environments](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
+3. Install [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html).
+
 ## Creating a New IPython Kernel
 
 See the [documentation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) for descriptions of the commands below and more.
@@ -40,6 +42,20 @@ __Launching a server:__
 jupyter lab
 ```
 
+**Reloading imports:**
+
+```python
+%load_ext autoreload  # Load the extension.
+%autoreload 2         # Reload all modules (except those excluded by %aimport)
+                      # every time before executing the Python code typed.
+```
+
+**Enabling imports from parent directories**:
+```python
+import sys, os
+sys.path.insert(0, os.path.abspath('..'))
+```
+
 ### General Python
 
 + [Python Built in Functions](https://docs.python.org/3/library/functions.html)
@@ -53,3 +69,12 @@ jupyter lab
 ### Jupyter Notebook or Lab Specific
 
 + [Built in "Magics"](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
+
+
+## Resources
+
+### Notebook Gallery
+
++ [A gallery of interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
++ [Peter Norvig](https://github.com/norvig/pytudes#pytudes-index-of-jupyter-ipython-notebooks)
++ [Kaggle](https://www.kaggle.com/) Machine Learning Competitions
