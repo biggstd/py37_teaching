@@ -1,10 +1,12 @@
-# Python Teaching Resources
+Python Teaching Resources
+=========================
 
 By **Tyler Biggs**
 
 ---
 
-## Getting Started with 3.7
+Getting Started with 3.7
+------------------------
 
 1. Install [Anaconda](https://anaconda.org/).
 
@@ -19,22 +21,21 @@ By **Tyler Biggs**
 
 3. Install [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html).
 
-## Creating a New IPython Kernel
+Using Jupyter Lab
+-----------------
+
+__Creating a New IPython Kernel__:
 
 See the [documentation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) for descriptions of the commands below and more.
 
 ```bash
 # Activate the environment you wish to create a kernel in.
 source activate py37
-
 # Install ipykernel.
 conda install ipykernel
-
 # Create the kernel.
 python -m ipykernel install --user --name py37 --display-name "Python 3.7"
 ```
-
-## Using Jupyter Lab
 
 __Launching a server:__
 
@@ -51,12 +52,14 @@ jupyter lab
 ```
 
 **Enabling imports from parent directories**:
+
 ```python
 import sys, os
 sys.path.insert(0, os.path.abspath('..'))
 ```
 
-### General Python
+General Python
+--------------
 
 + [Python Built in Functions](https://docs.python.org/3/library/functions.html)
 
@@ -66,14 +69,15 @@ sys.path.insert(0, os.path.abspath('..'))
 + [Python Standard Library](https://docs.python.org/3/library/) for ubiquitous
   programming needs.
 
-### Jupyter Notebook or Lab Specific
+Jupyter Notebook or Lab Specific
+--------------------------------
 
 + [Built in "Magics"](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
 
+Resources
+---------
 
-## Resources
-
-### Notebook Gallery
+__Notebook Examples__:
 
 + [A gallery of interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
 + [Peter Norvig](https://github.com/norvig/pytudes#pytudes-index-of-jupyter-ipython-notebooks)
